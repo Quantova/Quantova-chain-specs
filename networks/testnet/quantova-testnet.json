@@ -1,0 +1,52 @@
+{
+  "name": "Quantova Testnet",
+  "id": "quantova_testnet",
+  "chainType": "Live",
+  "protocolId": "qtov-testnet",
+  "bootNodes": [],
+  "telemetryEndpoints": null,
+  "properties": {
+    "tokenSymbol": "TQTOV",
+    "tokenDecimals": 18,
+    "ss58Format": 42,
+    "isEthereum": false
+  },
+  "codeSubstitutes": {},
+  "consensus": {
+    "model": "NPoS + deterministic round-robin slot leadership (no VRF)",
+    "authorityKeyScheme": "Falcon (post-quantum)",
+    "targetBlockTimeSeconds": 2.5,
+    "targetFinalitySeconds": 3.0,
+    "activeValidatorCap": 200,
+    "stateHashing": "SHA3-256"
+  },
+  "runtime": {
+    "specName": "quantova-runtime",
+    "implName": "quantova-runtime",
+    "specVersion": 1,
+    "transactionVersion": 1,
+    "authoringVersion": 1
+  },
+  "postQuantum": {
+    "signatureType": "QSignature",
+    "schemes": [
+      "dilithium",
+      "falcon",
+      "sphincsp"
+    ],
+    "defaultScheme": null,
+    "classicalFallback": false,
+    "addressDerivation": "SHA3-256(public_key)[..20], leading byte 0x40 (Q)"
+  },
+  "endpoints": {
+    "websocket": "wss://testnet.quantova.io",
+    "httpJsonRpc": "https://testnet.quantova.io"
+  },
+  "genesis": {
+    "note": "The canonical genesis is a generated, signed artifact. The raw genesis state is produced at launch from the signed runtime WASM and the genesis configuration, then committed alongside this file as quantova-testnet.raw.json and anchored by the genesis hash. See ./endpoints.md and ../../docs/chain-specification.md for the generation command and the genesis-hash anchoring procedure.",
+    "raw": {
+      "top": {},
+      "childrenDefault": {}
+    }
+  }
+}

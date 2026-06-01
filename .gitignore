@@ -1,0 +1,25 @@
+# Secrets / keys (defensive: this repo needs none)
+*.key
+*.pem
+*.p12
+*.pfx
+id_rsa*
+*.seed
+*.mnemonic
+secrets.*
+credentials.*
+.env
+.env.*
+
+# Node / Python
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+*.swp
+.idea/
+.vscode/

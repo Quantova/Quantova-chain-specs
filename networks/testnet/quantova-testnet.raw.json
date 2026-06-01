@@ -1,0 +1,23 @@
+{
+  "name": "Quantova Testnet",
+  "id": "quantova_testnet",
+  "chainType": "Live",
+  "bootNodes": [],
+  "telemetryEndpoints": null,
+  "protocolId": "qtov-testnet",
+  "properties": {
+    "tokenSymbol": "TQTOV",
+    "tokenDecimals": 18,
+    "ss58Format": 42,
+    "isEthereum": false
+  },
+  "codeSubstitutes": {},
+  "genesis": {
+    "raw": {
+      "top": {
+        "__GENERATED__": "Replace with the output of `quantova-node build-spec --chain quantova_testnet --raw`. The raw genesis maps SCALE-encoded storage keys to values and includes the signed runtime code under the :code key. Do not hand-edit; it is a generated, signed artifact anchored by the genesis hash."
+      },
+      "childrenDefault": {}
+    }
+  }
+}
