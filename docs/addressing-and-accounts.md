@@ -57,7 +57,7 @@ const wallet = new QuantumWallet();
 const account = wallet.create('dilithium'); // 'dilithium' | 'falcon' | 'sphincsp'
 console.log(account.address); // canonical Q-address, begins with 'Q'
 ```
-
+CRYSTALS-Dilithium (ML-DSA), Falcon (FN-DSA), and SPHINCS+ (SLH-DSA, FIPS 205)
 ```python
 # qweb3.py — same, in Python
 import qweb3
