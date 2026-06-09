@@ -8,7 +8,7 @@
 | Native asset | TQTOV (free testnet asset, no value) |
 | Decimals | 18 |
 | SS58 format | 42 |
-| Address style | Canonical Q-address (Base64 H160, leading `Q`); `isEthereum = false` |
+| Address style | Canonical Q-address (Bech32m, leading `Q1`); `isEthereum = false` |
 | State / tx / block hashing | SHA3-256 |
 | Consensus | NPoS + deterministic round-robin slot leadership (no VRF) |
 | Authority key scheme | Falcon (post-quantum) |
