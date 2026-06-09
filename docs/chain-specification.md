@@ -50,7 +50,7 @@ Full detail in [consensus-and-block-production.md](consensus-and-block-productio
 
 | Field | Value |
 |---|---|
-| Canonical address | Base64 H160, leading `Q` |
+| Canonical address | Bech32m, leading `Q1` |
 | Derivation | `SHA3-256(public_key)[..20]`, leading byte `0x40` |
 | H160 width | 20 bytes |
 | Hex `0x...` | Reserved for hashes / calldata, never accounts |
