@@ -11,10 +11,11 @@ A Quantova account address is derived from the account's post-quantum public key
 
 1. Hash the public key with **SHA3-256**.
 2. Take the **first 20 bytes** of the digest as the account body (H160 width).
-3. Set the **leading byte to `0x40`**, the fixed "Q" marker in Base64.
+3. Set the **leading byte to `0x40`**, the fixed "Q" marker.
 
-The canonical, user-facing form is the **Base64 encoding of those 20 bytes**, which
-always begins with `Q`. This holds for all three signature schemes — Dilithium,
+The canonical, user-facing form is the **Bech32m encoding (prefix `q`, shown upper-case)
+of those 20 bytes**, which always begins with `Q1` (letters and digits only, no symbols).
+This holds for all three signature schemes — Dilithium,
 Falcon, and SPHINCS+ all derive into the same 20-byte Q-address space.
 
 ### Why 20 bytes, not 32
@@ -38,7 +39,7 @@ inherited from any other ecosystem. The chain property `isEthereum` is `false`.
 | SS58 format | 42 |
 | Token symbol | QTOV (mainnet) / TQTOV (testnet) |
 | Token decimals | 18 |
-| Canonical address | Base64 H160, leading `Q` |
+| Canonical address | Bech32m, leading `Q1` |
 | H160 width | 20 bytes |
 | `isEthereum` | false |
 
