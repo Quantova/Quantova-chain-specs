@@ -39,7 +39,7 @@ chain is built.
 | Active validator cap | 200 |
 | Signature schemes | CRYSTALS-Dilithium, Falcon-512, SPHINCS+ (all post-quantum) |
 | Block / tx / state hashing | SHA3-256 |
-| Address style | Canonical Q-address (Base64 H160, leading `Q`); `isEthereum = false` |
+| Address style | Canonical Q-address (Bech32m, leading `Q1`); `isEthereum = false` |
 | Genesis supply | 1,050,000,000 QTOV |
 | Issuance | Disinflationary 5.0% → 1.5%, no burn |
 
